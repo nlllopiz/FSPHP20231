@@ -1,0 +1,387 @@
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+    scroll-behavior: smooth;
+    color: black;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 2;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+/* Variables **************************** */
+:root {
+    /*colores*/
+    --colorPrimario: #DF8716;
+    --colorSecundario: #71B11F;
+}
+
+/* Estilos genéricos ********************* */
+.texto-color-primario {
+    color: var(--colorPrimario)
+}
+
+.texto-color-secundaro {
+    color: var(--colorSecundario);
+}
+
+.fondo-color-primario {
+    background-color: var(--colorPrimario);
+}
+
+.fondo-color-secundario {
+    background-color: var(--colorSecundario);
+}
+
+.contenedor {
+    width: 70%;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+.boton {
+    color: white;
+    font-weight: 700;
+    padding: 1rem 3rem;
+    display: block;
+    margin: 0.5rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.boton-en-linea {
+    display: inline-block;
+}
+
+
+/* Encabezado **************************** */
+header {
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+}
+
+.header-contenido {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-barra-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    margin-right: 10px;
+    color: white;
+}
+
+nav a:hover {
+    color: var(--colorPrimario)
+}
+
+nav li:last-of-type a {
+    margin-right: 0;
+}
+
+.header-contenido h1 {
+    color: white;
+    max-width: 30rem;
+}
+
+
+/* Sección Nosotros ***************************************** */
+/*  ********************************************************** */
+#seccion-nosotros {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nosotros-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nosotros-item {
+    width: 20rem;
+}
+
+.nosotros-item img {
+    margin: 2rem 0;
+}
+
+.nosotros-item h3 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.nosotros-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 1rem;
+}
+
+/* Seccion Anuncios ********************** */
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.anuncios-item {
+    width: 21.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background-color: #F5F5F5;
+    border: 1px solid #D3D3D3;
+    margin-bottom: 1rem;
+}
+
+.anuncios-item h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.anuncios-item-contenido {
+    padding: 1rem;
+}
+
+.anuncios-item-precio {
+    font-weight: 700;
+    color: var(--colorSecundario)
+}
+
+.anuncios-item-contenido ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.anuncios-item-contenido i {
+    margin-right: 1rem;
+}
+
+main h2 {
+    margin-bottom: 2rem;
+}
+
+.anuncios-footer {
+    text-align: right;
+}
+
+
+/* Seccion Contacto ********************** */
+
+#seccionContacto {
+    background-image: url(../img/encuentra.jpg);
+    background-size: cover;
+    color: white;
+}
+
+#seccionContacto h2 {
+    font-weight: 700;
+}
+
+.contacto-contenido {
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/*Seccion blog y testimoniales *********** */
+.secciones-en-columna {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+
+.columna1 {
+    width: 40rem;
+}
+
+.columna2 {
+    width: 24rem;
+}
+
+/* Sección Blog ************************** */
+article {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article-img {
+    width: 15rem;
+}
+
+article img {
+    width: 100%;
+}
+
+.article-contenido {
+    width: 25rem;
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.article-contenido h3 {
+    font-weight: 700;
+}
+
+.columna1 h3::after {
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 0.2rem;
+    background-color: var(--colorSecundario);
+    margin-top: .5rem;
+}
+
+.article-footer {
+    text-align: right;
+    padding: 0 2rem;
+}
+
+/* Seccion Testimoniales ****************** */
+
+.testimoniales-contenido {
+    background-color: var(--colorSecundario);
+    color: white;
+    margin: 1rem 0;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.testimoniales-texto {
+    display: flex;
+    align-items: start;
+}
+
+.testimoniales-firma {
+    text-align: right;
+    margin: 3rem 0 1rem;
+}
+
+.testimoniales-contenido img {
+    width: 4rem;
+}
+
+
+/* footer ******************************** */
+footer {
+    background-color: #323232;
+    color:white;
+}
+
+.footer-contenido {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Media queries ************************* */
+
+@media all and (max-width: 1000px) {
+    .contenedor {
+        width: 80%;
+    }
+
+    nav li a i {
+        display: none !important;
+    }
+
+    .nosotros-contenido {
+        justify-content: center;
+    }
+
+    .main-contenido {
+        justify-content: center;
+    }
+
+    .article-img {
+        width: 100%;
+    }
+
+    .article-contenido {
+        padding-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .columna1 {
+        width: 100%;
+    }
+    .columna2 {
+        width: 100%;
+        padding-top: 2rem;
+    }
+
+    .footer-contenido {
+        justify-content: center;
+    }
+}
+
+
+/************ pagina nosotros**********/

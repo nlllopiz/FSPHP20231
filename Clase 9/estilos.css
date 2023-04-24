@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+}
+/*
+h2 {
+    color: red !important;
+}
+*/
+
+.naranja {
+    color: orange;
+}
+
+.verde {
+    color: green;
+}
+
+body {
+    background-color: grey;
+}
+
+h2 {
+    color: blue;
+}
+
+#encuentra {
+    color: red;
+    font-size: 35px;
+}

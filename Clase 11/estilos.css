@@ -1,0 +1,87 @@
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px; 
+    scroll-behavior: smooth;
+    color: black;
+}
+
+body {
+    background-color: grey;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* fin reset*/
+
+
+/* Variables */
+:root {
+    /*colores*/
+    --colorPrimario: red;
+    --colorSecundario: #71B11F;
+    /*tamaños*/
+}
+
+
+.textoBlanco {
+    color: white;
+}
+
+.textoVerde {
+    color: var(--colorSecundario);
+}
+
+.textoNaranja {
+    color: var(--colorPrimario)
+}
+
+.fondoVerde {
+    background-color: var(--colorSecundario);
+}
+
+.fondoNaranja {
+    background-color: var(--colorPrimario);
+}
+
+.fuenteGruesa {
+    font-weight: 700;
+}
+
+
+img {
+    width: 50%;
+}
+
+header {
+    height: 100vh;
+}
+
+p {
+    font-size: 1 rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+
+/*Encabezado*/
+/* Barra de navegación*/
+nav a { 
+    color: white;
+    
+}
