@@ -1,0 +1,15 @@
+header {
+    background-image: url(../../img/header.jpg);
+    background-size: cover;
+}
+
+#seccionContacto {
+    background-image: url(../img/encuentra.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.btn-primary {
+    color: rgb(237, 169, 12) !important;
+}
+
