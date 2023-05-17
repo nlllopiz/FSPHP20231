@@ -135,7 +135,6 @@ while(contadorr <= 10){
     contadorr++;
 }
 
-
 /* do while */
 contadorr = 1;
 do{
@@ -144,3 +143,71 @@ do{
 }while (contadorr <= 10)
 
 /* for */
+for(let contador2 = 11; contador2 <= 10; contador2++){
+    console.log(contador2);
+}
+
+//Ámbito (scope) de una variable
+//console.log(contador2);
+//da error porque contador2 existe sólo
+//dentro del for 
+
+//cuenta atrás
+for (let i = 10; i >= 0; i--){
+    if(i==0){
+        console.log("Despegue");
+    }
+    else {
+        console.log("Faltan " + i + " segundos");
+    }
+    
+}
+
+//imprimir números impares hasta 10
+for (let i = 0; i <= 100; i++){
+    if(i%2 == 0){
+        continue;
+    }
+    console.log(i);
+    if(i == 13){
+        break;
+    }
+}
+
+/* for anidados */
+//imprimir las tablas de multiplicar hasta 10
+for(let n1 = 1; n1 <= 10; n1++){
+    console.log("Tabla del " + n1);
+    for(let n2 = 1; n2 <= 10; n2++){
+        console.log(n1 + " * " + n2 + " = " + n1 * n2);
+    }
+}
+/*
+n1=1
+  n2=1
+  n2=2
+  ...
+n1=2
+  n2=1
+  n2=2
+  ...
+  */
+
+/* Ejercicios */
+/*
+Se ingresan números hasta que se introduce un cero.
+La computadora muestra el máximo y el mínimo. 
+*/
+let numero, maximo = 0, minimo = 999999;
+do {
+    numero = prompt("Ingrese un número, 0 para terminar");
+    if(numero > maximo) {
+        maximo = numero;
+    }
+    if(numero < minimo && numero != 0) {
+        minimo = numero;
+    }
+} while (numero != 0)
+
+console.log("Máximo: " + maximo);
+console.log("Mínimo: " + minimo);

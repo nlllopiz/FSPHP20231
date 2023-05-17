@@ -130,7 +130,7 @@ console.log(3);
 console.log(4);
 console.log(5);
 */
-while(salir = "s"){
+while(contadorr <= 10){
     console.log(contadorr);
     contadorr++;
 }
